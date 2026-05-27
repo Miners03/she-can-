@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Can Foundation - Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">She Can Foundation</h1>
+                <p class="tagline">Empowering Women, Building Futures</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <section class="form-section">
+                <div class="form-container">
+                    <h2 class="form-title">Get In Touch</h2>
+                    <p class="form-subtitle">We'd love to hear from you. Send us a message!</p>
+
+                    <!-- Success Message -->
+                    <div id="successMessage" class="success-message hidden">
+                        <div class="success-icon">✓</div>
+                        <h3>Form Submitted Successfully!</h3>
+                        <p>Thank you for reaching out. We'll get back to you soon.</p>
+                        <button class="reset-btn" onclick="resetForm()">Send Another Message</button>
+                    </div>
+
+                    <!-- Form -->
+                    <form id="contactForm" class="form" onsubmit="handleSubmit(event)">
+                        <!-- Name Field -->
+                        <div class="form-group">
+                            <label for="name" class="label">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                class="input" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <!-- Email Field -->
+                        <div class="form-group">
+                            <label for="email" class="label">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                class="input" 
+                                placeholder="Enter your email address"
+                                required
+                            >
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div class="form-group">
+                            <label for="message" class="label">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                class="textarea" 
+                                placeholder="Write your message here..."
+                                rows="5"
+                                required
+                            ></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">Submit</span>
+                            <span class="btn-loader hidden" id="btnLoader"></span>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 She Can Foundation. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
