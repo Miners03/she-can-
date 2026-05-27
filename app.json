@@ -1,0 +1,14 @@
+{
+  "name": "she-can-foundation-form",
+  "description": "She Can Foundation - Contact Form Project",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/she-can-foundation-form"
+  },
+  "keywords": ["contact-form", "foundation", "nodejs", "express"],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
